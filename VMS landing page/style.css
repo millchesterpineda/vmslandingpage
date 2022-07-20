@@ -6,6 +6,7 @@
     --backgroundColor: #4C5762;
     --white: #FBFCF8;
     --black: #000004;
+    --blacktext: #222222;
     --lightgray: #A9A9A9;
 
 }
@@ -32,6 +33,7 @@ a{
 }
 
 .big-wrapper{
+    position: absolute;
     padding: 1rem 5rem 2rem 5rem;
     width: 100%;
     min-height: 100vh;
@@ -52,10 +54,11 @@ a{
 }
 
 header .container{
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background-color: var(--backgroundColor);
 }
 
 .logo{
@@ -66,7 +69,7 @@ header .container{
 }
 
 .logo img{
-    width: 120px;
+    width: 90px;
 }
 
 .links ul{
@@ -81,7 +84,9 @@ header .container{
     display: inline-block;
     transition: 0.3s;
 }
-
+.navlink{
+    font-size: 10pt;
+}
 .links a:hover{
     color:var(--hoverColor);
     transform: scale(1.05);
@@ -129,22 +134,29 @@ header .container{
     margin: 1rem 0;
 }
 
-.showcase-area2 .container{
+
+/* how to use-----------------------------------------------------------------*/
+
+.showcase-area2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10rem 0rem 0 0rem;
+    padding-top: 10rem;
+    background-color: var(--mainColor);
 }
+.howtouse{
+    padding: 0 15rem 0 15rem;
+    
 
+}
 .howtouseheader{
     display: flex;
     justify-content: center;
-    color: var(--backgroundColor);
-    font-size: 1.5rem;
-}
-.how{
     color: var(--white);
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    
 }
 
 .showcase-area2 .container2{
@@ -153,7 +165,7 @@ header .container{
     align-items: center;
     justify-content: center;
     
-    padding: 2rem 5rem 5rem 5rem;
+    padding: 1rem 5rem 5rem 5rem;
 }
 
 .howleft{
@@ -162,8 +174,6 @@ header .container{
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
-    
-    
 }
 
 .howcenter{
@@ -172,7 +182,6 @@ header .container{
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
-    
 }
 
 .howright{
@@ -181,27 +190,29 @@ header .container{
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
-    
 }
 
 .howheading2{
     display: flex;
     align-content: center;
-  
+    font-size: 1rem;
+    color: var(--white);
 }
 
 .text1{
     text-align: center;
     font-size: .6rem;
     padding: 0 3rem 0 3rem;
+    color: var(--backgroundColor);
+    line-height: 2;
 }
-.howheading2{
-    font-size: 1rem;
-}
+
 .howpic{
     height: 200px;
     width: auto;
 }
+
+/*showcase-area 3-----------------------------------------------------------------*/
 
 .big-title2{
     font-size: 1rem;
@@ -214,12 +225,11 @@ header .container{
     grid-template-columns: .75fr 1.25fr;
     align-items: center;
     justify-content: center;
-
     padding-top: 2rem;
     
 }
 .showcase-area3 .text{
-    color: var(--black);
+    color: var(--white);
 }
 .Phone2{
     height: 400px;
@@ -230,6 +240,7 @@ header .container{
     margin-right: 2rem;
 }
 
+/*showcase-area 4-----------------------------------------------------------------*/
 .showcase-area4 .container{
     display: grid;
     grid-template-columns: 1.25fr .75fr;
@@ -240,7 +251,7 @@ header .container{
 }
 
 .showcase-area4 .text{
-    color: var(--black);
+    color: var(--white);
 }
 .Phone4{
     height: 400px;
@@ -249,4 +260,267 @@ header .container{
 }
 .left4{
     margin-right: 2rem;
+}
+
+
+
+
+
+
+/* Partners-----------------------------------------------------------------*/
+.showcase-area5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    background-color: var(--mainColor);
+}
+
+.showcase-area5 .howtouseheader{
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.showcase-area5 .container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem 5rem 5rem;
+    
+}
+.showcase-area5 .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.showcase-area5 .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.showcase-area5 .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.showcase-area5 .heading2{
+    display: flex;
+    align-content: center;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.showcase-area5 .text1{
+    text-align: center;
+    font-size: .6rem;
+    padding: 0 3rem 0 3rem;
+    color: var(--white);
+}
+
+.showcase-area5 .pic{
+    height: 200px;
+    width: auto;
+}
+
+
+
+/* Contact Us-----------------------------------------------------------------*/
+.Contactus {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.Contactus .contactheader{
+    display: flex;
+    justify-content: center;
+    color: var(--mainColor);
+    font-size: 1.5rem;
+}
+
+.Contactus .heading2{
+    display: flex;
+    align-content: center;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.Contactus .text1{
+    text-align: center;
+    font-size: .6rem;
+    padding: 0 3rem 0 3rem;
+    color: var(--white);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem 5rem 5rem;
+    
+}
+.row1{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+
+ 
+}
+.row2{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+
+.txtfield{
+    position: relative;
+    margin: .5rem;
+}
+.txtfield input{
+    width:300px;
+    padding: 0 10px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--mainColor);
+    border-style: solid;
+    background: none;
+    color: var(--white);
+    
+}
+.row3 .txtfield input{
+    width:620px;
+    padding: 0 10px;
+    height: 150px;
+    font-size: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--mainColor);
+    border-style: solid;
+    background: none;
+    color: var(--white);
+    
+}
+
+
+input::placeholder {
+    color: var(--white);
+    opacity: 1;
+  }
+
+
+
+
+/*----footers-----------------------------------------------------------------*/
+.bottom-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    background-color: var(--mainColor);
+}
+
+.bottom-area .container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    padding: 0rem 0rem 0rem 0rem;
+    
+}
+.bottom-area .left{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content:center;
+    justify-content:start;
+    padding-left: 6rem;
+}
+
+.bottom-area .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 0 5rem 0 5rem;
+}
+
+.bottom-area .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.bottom-area .heading2{
+    display: flex;
+    align-content: center;
+    font-size: .6rem;
+    color: var(--white);
+}
+
+.bottom-area .copyright{
+    text-align: center;
+    font-size: .6rem;
+    padding: 1rem 0rem 0 0rem;
+    color: var(--white);
+}
+.email{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: .7rem;
+}
+
+.socials{
+    padding-top: .7rem;
+}
+
+
+.bottom-area .pic{
+    height: 50px;
+    width: auto;
+}
+
+.icon1{
+    height: 10px;
+    width: auto;
+    padding-right: .4rem;
+}
+.icon2{
+    height: 20px;
+    width: auto;
+    padding-right: .6rem;
+    padding-right: .6rem;
 }
