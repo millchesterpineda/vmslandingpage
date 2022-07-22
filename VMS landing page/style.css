@@ -35,7 +35,7 @@ a{
 
 .big-wrapper{
     position: absolute;
-    padding: 1rem 5rem 2rem 5rem;
+    
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -43,6 +43,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    
 }
 
 .container{
@@ -156,7 +158,10 @@ header .container{
     align-items: center;
     justify-content: center;
     padding-top: 10rem;
-    background-color: var(--mainColor);
+    padding-bottom: 10rem;
+    background-image: url(img/vector.png);
+    background-size: cover;
+    
 }
 .howtouse{
     padding: 0 20rem 0 20rem;
@@ -228,6 +233,10 @@ header .container{
 }
 
 /*showcase-area 3-----------------------------------------------------------------*/
+.showcase-area3{
+    padding: 0 5rem 0 5rem;
+}
+
 .big-title2 h1{
     font-family: 'Volkhov', serif;
 }
@@ -264,6 +273,9 @@ header .container{
 }
 
 /*showcase-area 4-----------------------------------------------------------------*/
+.showcase-area4{
+    padding: 0 5rem 0 5rem;
+}
 .showcase-area4 .container{
     display: grid;
     grid-template-columns: 1.25fr .75fr;
@@ -304,8 +316,10 @@ header .container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 4rem;
-    background-color: var(--mainColor);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url(img/vector.png);
+    background-size: cover;
 }
 
 .showcase-area5 .howtouseheader{
@@ -482,8 +496,11 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
     padding-top: 4rem;
-    background-color: var(--mainColor);
+    padding-bottom: 1rem;
+    background-image: url(img/vector2.png);
+    background-size: cover;
 }
 
 .bottom-area .container2{
