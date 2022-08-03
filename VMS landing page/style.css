@@ -129,7 +129,7 @@ header .container {
   margin-right: 2rem;
 }
 .big-title {
-  font-size: 1.4rem;
+  font-size: 24px;
   color: var(--white);
   line-height: 1.2;
   padding: 5rem 0 5rem 5rem;
@@ -625,6 +625,11 @@ input::placeholder {
     header .container {
         padding: 0 1rem 0 1rem;
       }
+
+    .big-title {
+        font-size: 18px;
+     
+      }
    
   .showcase-area .container {
     display: grid;
@@ -633,7 +638,7 @@ input::placeholder {
     justify-content: center;
     justify-items: center;
     align-content: center;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 3rem 1rem 2rem 1rem;
   
   }
   .showcase-area .big-title {
@@ -690,10 +695,14 @@ input::placeholder {
     align-items: center;
     text-align: center;
   }
-
   .big-title2 {
+    font-size: 9pt;
     padding: 0 2rem 0 2rem;
+    color: var(--white);
+    line-height: 1.2;
+    font-weight: 400;
   }
+
 
   .showcase-area3 .container {
     display: grid;
